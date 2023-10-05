@@ -6,7 +6,7 @@
 
 [sub_resource type="ShaderMaterial" id="4"]
 shader = ExtResource("1")
-shader_parameter/tint = Color(0.439216, 0.894118, 1, 1)
+shader_parameter/tint = Color(0.480469, 1, 0.975647, 1)
 
 [sub_resource type="Curve2D" id="1"]
 
@@ -21,7 +21,6 @@ material = SubResource("4")
 [node name="Water_Border" type="Path2D" parent="."]
 curve = SubResource("1")
 script = ExtResource("3")
-spline_length = 24
 color = Color(1, 1, 1, 0.396078)
 
 [node name="Water_Body_Area" type="Area2D" parent="."]

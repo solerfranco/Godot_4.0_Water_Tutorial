@@ -1,10 +1,6 @@
 res://default_env.tres
 res://Main.tscn
-res://Scenes/Water_Spring.gd
-res://Scenes/Water_Body.gd
-res://smooth_path_modified.gd
 res://water_shader.gdshader
 res://Scenes/Stone.tscn
 res://Scenes/Water_Body.tscn
 res://Scenes/Water_Spring.tscn
-res://Scenes/Stone.gd
