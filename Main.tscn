@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://4tn3cbuuusug"]
+
+[ext_resource type="PackedScene" uid="uid://bq75ynbpisbrj" path="res://Scenes/Water_Body.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://bu1fgru6cd1jl" path="res://Sprites/scene.png" id="2"]
+[ext_resource type="Script" path="res://Main.gd" id="3"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-24, 46.75)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -15)
+
+[node name="Water_Body" parent="." instance=ExtResource("1")]
+z_index = 1
+position = Vector2(0, 456)
+d = 0.05
+spread = 0.5
+distance_between_springs = 24
+spring_number = 44
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(512, 288)
